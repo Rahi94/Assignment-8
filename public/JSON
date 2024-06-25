@@ -1,0 +1,80 @@
+[
+  {
+    "bookId": 1,
+    "bookName": "The Hitchhiker's Guide to the Galaxy",
+    "author": "Douglas Adams",
+    "image": "hitchhikers_guide.jpg",  
+    "review": "A hilarious and thought-provoking science fiction comedy.",
+    "totalPages": 192,
+    "rating": 4.5,
+    "category": "Science Fiction",
+    "tags": ["Humor", "Satire", "Space Travel"],
+    "publisher": "Pan Books",
+    "yearOfPublishing": 1979
+  },
+  {
+    "bookId": 2,
+    "bookName": "Pride and Prejudice",
+    "author": "Jane Austen",
+    "image": "pride_and_prejudice.jpg",  
+    "review": "A witty and timeless social commentary on love and class.",
+    "totalPages": 224,
+    "rating": 4.8,
+    "category": "Romance",
+    "tags": ["Classic", "Coming of Age", "Manners"],
+    "publisher": "Penguin Classics",
+    "yearOfPublishing": 1813
+  },
+  {
+    "bookId": 3,
+    "bookName": "To Kill a Mockingbird",
+    "author": "Harper Lee",
+    "image": "to_kill_a_mockingbird.jpg", 
+    "review": "A powerful and moving story about racial injustice in the American South.",
+    "totalPages": 324,
+    "rating": 4.9,
+    "category": "Fiction",
+    "tags": ["Coming of Age", "Social Justice", "Prejudice"],
+    "publisher": "J.B. Lippincott & Co.",
+    "yearOfPublishing": 1960
+  },
+  {
+    "bookId": 4,
+    "bookName": "Dune",
+    "author": "Frank Herbert",
+    "image": "dune.jpg",  
+    "review": "An epic science fiction saga set on a desert planet.",
+    "totalPages": 863,
+    "rating": 4.7,
+    "category": "Science Fiction",
+    "tags": ["Politics", "Religion", "Ecology"],
+    "publisher": "Chilton Books",
+    "yearOfPublishing": 1965
+  },
+  {
+    "bookId": 5,
+    "bookName": "The Lord of the Rings",
+    "author": "J.R.R. Tolkien",
+    "image": "lord_of_the_rings.jpg",  
+    "review": "A classic fantasy adventure about a fellowship on a quest to destroy the One Ring.",
+    "totalPages": 1136,
+    "rating": 5.0,
+    "category": "Fantasy",
+    "tags": ["Epic", "Adventure", "Mythology"],
+    "publisher": "Allen & Unwin",
+    "yearOfPublishing": 1954
+  },
+  {
+    "bookId": 6,
+    "bookName": "The Catcher in the Rye",
+    "author": "J.D. Salinger",
+    "image": "catcher_in_the_rye.jpg",
+    "review": "A coming-of-age story about a disillusioned teenager.",
+    "totalPages": 224,
+    "rating": 4.2,
+    "category": "Fiction",
+    "tags": ["Coming of Age", "Alienation", "Rebellion"],
+    "publisher": "Little, Brown and Company",
+    "yearOfPublishing": 1951
+  }
+]
