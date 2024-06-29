@@ -1,9 +1,10 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
+import { Link, NavLink } from 'react-router-dom';
+import PagesToRead from '../pages/PagesToRead';
 
 const Nav = () => {
     return (
-        <div className="navbar bg-base-100">
+        <div className="navbar bg-base-100 mt-4">
             <div className="navbar-start">
                 <div className="dropdown">
                     <div tabIndex={0} role="button" className="btn btn-ghost lg:hidden">
@@ -33,16 +34,16 @@ const Nav = () => {
 
             </div>
             <div className="navbar-center font-extrabold hidden lg:flex">
-                <ul className="menu menu-horizontal px-1 text-lg">
-                    <Link to='/'><a className='mr-8'>Home</a></Link>
-                    <Link to='/listedbooks'><a className='mr-8'>Listed books</a></Link>
-
-                    <Link to='/pagestoread'><a className='mr-8'>Pages to Read</a></Link>
+                <ul className="menu menu-horizontal px-1 text-lg hidden md:flex items-center gap-5">
+                    <NavLink to='/' className={({isActive}) => isActive ? 'font-bold text-green-400 border-2 p-1 px-2 rounded-lg border-green-400' : 'font-bold'}>Home</NavLink>
+                    <NavLink to='/pagestoread' className={({isActive}) => isActive ? 'font-bold text-green-400 border-2 p-1 px-2 rounded-lg border-green-400' : 'font-bold'}>Pages to read</NavLink>
+                    <NavLink to='/listedbooks' className={({isActive}) => isActive ? 'font-bold text-green-400 border-2 p-1 px-2 rounded-lg border-green-400' : 'font-bold'}>Listed books</NavLink>
+                  
                 </ul>
             </div>
             <div className="navbar-end mr-4">
-                <a className="btn btn-secondary mr-4">Sign In</a>
-                <a className="btn btn-accent">Sign up</a>
+                <a className="btn btn-secondary bg-green-500 border-0 mr-4">Sign In</a>
+                <a className="btn btn-accent text-white">Sign up</a>
             </div>
             <label className="grid cursor-pointer place-items-center">
                 <input
@@ -78,7 +79,7 @@ const Nav = () => {
                     <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
                 </svg>
             </label>
-        </div>
+        </div >
     );
 };
 
