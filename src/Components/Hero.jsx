@@ -1,5 +1,6 @@
 import React from 'react';
 import { json } from 'react-router-dom';
+import { Link } from 'react-router-dom';
 
 const Hero = () => {
     return (
@@ -11,7 +12,7 @@ const Hero = () => {
                 <div>
                     <h1 className="text-3xl font-bold mb-8">Books to Freshen up your bookshelf!</h1>
                    
-                    <button className="btn border-0 text-white btn-primary bg-green-500">View the list</button>
+                    <Link to='/listedbooks' className="btn border-0 text-white btn-primary bg-green-500">View the list</Link>
                 </div>
             </div>
         </div>

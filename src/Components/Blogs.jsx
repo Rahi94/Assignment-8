@@ -8,7 +8,7 @@ const Blogs = () => {
 
 
     return (
-        <div>
+        <div className="grid justify-center items-center grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-3 mx-8">
 
 
             {

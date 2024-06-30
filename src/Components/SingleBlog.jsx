@@ -1,35 +1,42 @@
 import React from 'react';
 
-const SingleBlog = ({blog}) => {
+const SingleBlog = ({ blog }) => {
+    const { bookName, image, author, review, rating, yearOfPublishing, category,tags } = blog;
     return (
-        <div>
-             <div className="card bg-base-100 w-96 shadow-xl">
+        <div className='mb-12'>
+            <div className="card bg-base-100 w-96 shadow-xl">
                 <figure>
                     <img
-                        src="https://img.daisyui.com/images/stock/photo-1606107557195-0e29a4b5b4aa.jpg"
+                        src={image}
                         alt="Shoes" />
                 </figure>
                 <div className="card-body">
-                    <div className="card-actions justify-start">
-                        <div className="badge badge-outline">Fashion</div>
-                        <div className="badge badge-outline">Products</div>
+                    <div className="card-actions justify-start text-green-500 ">
+                        <div className="badge badge-outline bg-slate-100 border-0 font-bold p-4">Fashion</div>
+                        <div className="badge badge-outline bg-slate-100 border-0 font-bold p-4">Products</div>
                     </div>
                     <h2 className="card-title">
-                       hello!
+                        {bookName}
 
                     </h2>
-                    <p>If a dog chews shoes whose shoes does he choose?</p>
+                    <p>By: {author}</p>
                     <div className='flex justify-between'>
-                        <p>Fiction</p>
+                        <p>{category}</p>
                         <div className='flex gap-3'>
-                            <p>5.00</p>
-                            <p>rating</p>
+
+                            <p>{rating}</p>
+                            {/* rating */}
+                            <div className="rating">
+                                <input type="radio" name="rating-2" className="mask mask-star-2 bg-orange-400" defaultChecked />
+
+                            </div>
+
                         </div>
                     </div>
 
                 </div>
             </div>
-            
+
         </div>
     );
 };
