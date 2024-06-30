@@ -11,10 +11,11 @@ const router = createBrowserRouter([
   {
     path: '/',
     element: <Mainlayout />,
-    children:[
+    children: [
       {
-        index: true,
-        element: <Home />
+        path: '/',
+        element: <Home />,
+        loader: () => fetch('data.json'),
       },
       {
         path: '/listedbooks',
@@ -26,7 +27,7 @@ const router = createBrowserRouter([
       }
     ]
   },
-  
+
 ])
 
 ReactDOM.createRoot(document.getElementById('root')).render(
