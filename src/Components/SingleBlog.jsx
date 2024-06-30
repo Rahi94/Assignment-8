@@ -1,10 +1,11 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 
 const SingleBlog = ({ blog }) => {
     const { bookName, image, author, review, rating, yearOfPublishing, category,tags } = blog;
     return (
-        <div className='mb-12'>
-            <div className="card bg-base-100 w-96 shadow-xl">
+        <Link to='/blog/:hi' className='mb-12 '>
+            <div className="card bg-base-100 w-96 shadow-xl hover:border-secondary hover:border-2 hover:scale-105">
                 <figure>
                     <img
                         src={image}
@@ -37,7 +38,7 @@ const SingleBlog = ({ blog }) => {
                 </div>
             </div>
 
-        </div>
+        </Link>
     );
 };
 

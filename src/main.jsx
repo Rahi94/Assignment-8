@@ -6,6 +6,7 @@ import { RouterProvider, createBrowserRouter } from 'react-router-dom'
 import ListedBooks from './pages/ListedBooks.jsx'
 import PagesToRead from './pages/PagesToRead.jsx'
 import Mainlayout from './layouts/Mainlayout.jsx'
+import Blog from './pages/Blog.jsx'
 
 const router = createBrowserRouter([
   {
@@ -24,7 +25,13 @@ const router = createBrowserRouter([
       {
         path: '/pagestoread',
         element: <PagesToRead />
-      }
+      },
+      {
+        path: '/blog/:hi',
+        element: <Blog />,
+        loader: ({ params }) =>
+        fetch(`data.json/${params.hi}`),
+      },
     ]
   },
 
