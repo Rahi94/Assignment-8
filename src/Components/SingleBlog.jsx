@@ -2,9 +2,9 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 
 const SingleBlog = ({ blog }) => {
-    const { bookName, image, author, review, rating, yearOfPublishing, category,tags } = blog;
+    const { bookName, image,bookId, author, rating,  category, } = blog;
     return (
-        <Link to='/blog/:hi' className='mb-12 '>
+        <Link to={`/blog/:${bookId}`} className='mb-12 '>
             <div className="card bg-base-100 w-96 shadow-xl hover:border-secondary hover:border-2 hover:scale-105">
                 <figure>
                     <img

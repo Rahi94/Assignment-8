@@ -27,10 +27,10 @@ const router = createBrowserRouter([
         element: <PagesToRead />
       },
       {
-        path: '/blog/:hi',
+        path: '/blog/:bookId',
         element: <Blog />,
         loader: ({ params }) =>
-        fetch(`data.json/${params.hi}`),
+          fetch(`data.json/${params.bookId}`),
       },
     ]
   },
